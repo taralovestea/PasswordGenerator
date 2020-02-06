@@ -2,7 +2,7 @@
 // create a list of variables to use as potential characters 
 var generateBtn = document.querySelector("#generate");
 var alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var alphaLower = [];
+var alphaLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var symbols = ["~", "!", "?", "@", "#", "$", "%","^", "&", "*"];
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
@@ -13,6 +13,8 @@ function generatePassword() {
   var passwordLength = parseInt(prompt("How long would you like your password? (must be between 8-128"));
   if (passwordLength<8 || passwordLength>128) {
     alert("Please enter a value between 8 and 128 characters.")
+    passwordText.value=""
+    return
   }
   //Make sure the value for password lenght is a number
    while (isNaN(passwordLength)) {
@@ -72,5 +74,4 @@ function writePassword() {
 
 //generate the button to the page
 generateBtn.addEventListener("click", writePassword);
-
 
