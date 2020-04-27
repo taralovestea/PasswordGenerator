@@ -1,6 +1,15 @@
-GIVEN that you want a safe and secure randomized password
-THEN you have the ease of a brand new safe password with the click of a button! 
-WHEN you click the generator you will be prompted to answer a few questions to refine your password to your specifications!
-https://taralovestea.github.io/PasswordGenerator/
+# Password Generator
+
+PassWord Generator helps you make a safe and secure randomized password!
+
+## Getting Started
+
+```
+NPM install
+```
+
+
+## Deployed Link
+[click here to visit deployed code](https://taralovestea.github.io/PasswordGenerator/)
 
 ![Screen Shot 2020-02-09 at 9 25 15 AM](https://user-images.githubusercontent.com/59029999/74109114-57bcb400-4b46-11ea-8deb-92b79f7e9947.png)
